@@ -21,9 +21,4 @@ public class Elective {
     updatable = false,
     insertable = false)
     private LocalDateTime insertTime;
-
-    public Elective(Student student,Course course) {
-        this.student = student;
-        this.course = course;
-    }
 }

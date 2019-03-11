@@ -22,13 +22,21 @@ public class ElectiveRepository {
         em.persist(c2);
         Course c3 = new Course("c3");
         em.persist(c3);
-        Elective e1 = new Elective(s1,c1);
+        Elective e1 = new Elective();
+        e1.setStudent(s1);
+        e1.setCourse(c1);
         em.persist(e1);
-        Elective e2 = new Elective(s1,c2);
+        Elective e2 = new Elective();
+        e2.setStudent(s1);
+        e2.setCourse(c2);
         em.persist(e2);
-        Elective e3 = new Elective(s2,c2);
+        Elective e3 = new Elective();
+        e3.setStudent(s2);
+        e3.setCourse(c2);
         em.persist(e3);
-        Elective e4 = new Elective(s2,c3);
+        Elective e4 = new Elective();
+        e4.setStudent(s2);
+        e4.setCourse(c3);
         em.persist(e4);
     }
 }
